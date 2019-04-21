@@ -13,6 +13,10 @@
     <!-- Bootstrap grid CSS -->
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="slick/slick.css">
+
     <link rel="stylesheet" href="css/style.css">
 
     
@@ -39,10 +43,88 @@
            
           </div>
         </div>
+        <!-- /.row -->
       </div>
+      <!-- /.top-nav -->
+      <div class="row">
+        <div class="col-md-4">
+          <div class="left-sidebar">
+            <ul class="left-sidebar_menu">
+              <li><a href="#">Земля</a></li>
+              <li><a href="#">Жилая недвижимость</a></li>
+              <li><a href="#">Коммерческая недвижимость</a></li>
+              <li><a href="#">Новостройки</a></li>
+              <li><a href="#">Дома/Коттеджи</a></li>
+              <li><a href="#">Строительство</a></li>
+              <li><a href="#">Аренда</a></li>
+            </ul>
+            <!-- /.left-sidebar_menu -->
+            <div class="left-sidebar_object">
+              <img src="img/left-sidebar/object.jpg" alt="Фото объекта">
+              <div class="left-sidebar_object-description">
+                <h3>Жилой комплекс в г. Москва</h3>
+                <p>190-квартирный 12-этажный жилой дом № 88 по ул. Ленина в микрорайоне Центральный...</p>
+                <a href="№">Узнать подробнее</a>
+              </div>
+            </div>
+            <!-- /.left-sidebar_object -->
+            <div class="left-sidebar_object">
+              <img src="img/left-sidebar/object.jpg" alt="Фото объекта">
+              <div class="left-sidebar_object-description">
+                <h3>Жилой комплекс в г. Москва</h3>
+                <p>190-квартирный 12-этажный жилой дом № 88 по ул. Ленина в микрорайоне Центральный...</p>
+                <a href="№">Узнать подробнее</a>
+              </div>
+            </div>
+            <!-- /.left-sidebar_object -->
+          </div>
+        </div>
+        <!-- /.col-md-4 -->
+        <div class="col-md-8">
+          <div class="content">
+            <h2>СтройИнвест</h2>
+            <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Журчит продолжил дороге даже ведущими от всех, гор что переписали правилами но эта заглавных если раз вопроса заголовок лучше страна! Проектах города заманивший языкового жаренные они, имени ведущими ему предупредила грустный маленькая залетают пустился но первую правилами моей деревни рыбного что, рукопись всеми, дорогу строчка собрал назад приставка? До ты большого маленький вопрос лучше, реторический своих приставка? Строчка предупреждал о текста.</p>
+            <p>От всех сих семь жизни. Переписывается, раз буквенных продолжил своих решила рот проектах, города ему инициал знаках запятых текстов lorem, грустный выйти имеет домах там над встретил. Живет, продолжил приставка ее рыбного знаках заманивший послушавшись домах бросил повстречался вдали безопасную? Назад, lorem переписали, напоивший текста даже наш моей великий бросил проектах большой буквенных эта не, путь дорогу заголовок осталось дороге! Над, города языком. Обеспечивает запятых рыбными дороге предупреждал заголовок рукописи проектах.</p>
+            <p>Океана своих текст решила, там моей взобравшись возвращайся переулка города власти точках великий, коварных курсивных за. Безорфографичный предупредила эта решила взгляд своего путь диких последний. Силуэт, свое образ, не переулка своих курсивных свой эта они гор однажды, взобравшись бросил букв. Семь, дал меня, текста назад взобравшись необходимыми деревни коварных пустился о силуэт предложения это до одна всемогущая жаренные заголовок своих дорогу. Там, своего мир! Ручеек живет всемогущая подзаголовок грамматики заголовок.</p>
+            <a href="#" class="btn btn-primary">Узнать больше о компании</a>
+          </div>
+          <!-- /.content -->
+          <div class="directions">
+            <h2>Направления деятельности</h2>
+            <div class="direction-blocks">
+              <div class="directions-block" style="background-image: url(img/directions/slider.jpg);">
+                <h3>Девелоперские проекты</h3>
+              </div>
+              <div class="directions-block" style="background-image: url(img/directions/slider.jpg);">
+                <h3>Продажа недвижемости</h3>
+              </div>
+              <div class="directions-block" style="background-image: url(img/directions/slider.jpg);">
+                <h3>Строительство</h3>
+              </div>
+              <div class="directions-block" style="background-image: url(img/directions/slider.jpg);">
+                <h3>Инвестиционные программы</h3>
+              </div>
+              <div class="directions-block" style="background-image: url(img/directions/slider.jpg);">
+                <h3>Строительство</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.col-md-8 -->
+      </div>
+      <!-- /.row -->
     </div>
-
+    <!-- /.container -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="js/jquery-3.2.1.slim.min.js"><\/script>')</script>
+    <script src="slick/slick.js"></script>
+    <script>
+      $('.direction-blocks').slick({
+        arrows: false,
+        dots: true,
+        slidesToShow: 4,
+        slidesToScroll: 1
+      });
+    </script>
   </body>
 </html>
