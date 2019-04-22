@@ -1,6 +1,6 @@
 .top-nav
   background-color: $white
-  padding: 15px
+  padding: 15px 34px
   position: relative
   &_btn
     display: none
@@ -15,12 +15,14 @@
     &:hover
       cursor: pointer
   &_menu
+    transition: all 0.2s
     list-style: none
     padding: 0
     display: flex
-    justify-content: space-around
     li
-      // margin-right: 45px
+      margin-right: 45px
+      &:last-child
+        margin-right: 0
       a
         text-transform: uppercase
         text-decoration: none
