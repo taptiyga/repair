@@ -32,6 +32,9 @@
             </div>
           </div>
           <div class="col-md-auto">
+            <button class="top-nav_btn">
+              <i class="icon-menu"></i>
+            </button>
             <ul class="top-nav_menu">
               <li><a href="#">Главная</a></li>
               <li><a href="#">Окомпании</a></li>
@@ -49,6 +52,9 @@
       <div class="row">
         <div class="col-md-4">
           <div class="left-sidebar">
+            <div class="left-sidebar_btn">
+              Категории
+            </div>
             <ul class="left-sidebar_menu">
               <li><a href="#">Земля</a></li>
               <li><a href="#">Жилая недвижимость</a></li>
@@ -126,7 +132,7 @@
             </div>
           </div>
           <!-- /.col-md -->
-          <div class="col-md-2">
+          <div class="col-md-2 col-6">
             <ul class="footer_menu">
               <li><a href="#">Главная</a></li>
               <li><a href="#">Окомпании</a></li>
@@ -137,7 +143,7 @@
             </ul>
           </div>
           <!-- /.col-md -->
-          <div class="col-md">
+          <div class="col-md col-6">
             <ul class="footer_menu">
               <li><a href="#">Земля</a></li>
               <li><a href="#">Жилая недвижимость</a></li>
@@ -178,7 +184,33 @@
         arrows: false,
         dots: true,
         slidesToShow: 4,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          },
+        ]
+      });
+    </script>
+    <script>
+      $(document).ready(function() {
+        var menuBtn = $('.top-nav_btn');
+        var menu = $('.top-nav_menu');
+        var sidebarBtn = $('.left-sidebar_btn');
+        var sidebarMenu = $('.left-sidebar_menu');
+
+        menuBtn.on('click', function(event) {
+          event.preventDefault();
+          menu.toggleClass('top-nav_menu__active');
+        });
+        sidebarBtn.on('click', function(event) {
+          event.preventDefault();
+          sidebarMenu.toggleClass('left-sidebar_menu__active');
+        });
       });
     </script>
   </body>
